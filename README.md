@@ -20,8 +20,8 @@ python setup.py install
 
 ### Usage:
 ```python
-from rj_app.user_auth import UserAuth
-from rj_app.media import MP3
+from rj_api.user_auth import UserAuth
+from rj_api.media import MP3
 
 # Login user and get some info from user profile
 user = UserAuth()
