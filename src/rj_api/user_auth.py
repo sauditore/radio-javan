@@ -1,6 +1,6 @@
 from typing import Dict
 
-from base_request import RjBaseRequest
+from .base_request import RjBaseRequest
 
 import logging
 

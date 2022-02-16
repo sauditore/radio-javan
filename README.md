@@ -42,6 +42,10 @@ print(mp3.download_file(info.get("link")))
 
 <hr/>
 
+### Other API endpoints:
+You can use RjBaseRequest class to extend API endpoints. All you need is a URL with its parameters and then POST it 
+to server. 
+
 ### Bad Guys:
 You may use this on your own to create bulk accounts! It's on your own. but you want to use my chain proxy too :)
 

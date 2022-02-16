@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="python-rj-app",
-    version="0.1.0",
+    version="0.1.1",
     author="Amir Pourjafari",
     author_email="amir.pourjafari@gmail.com",
     description="Radio Javan Python Binding",
@@ -24,5 +24,5 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
-    install_requires=["requests"]
+    install_requires=["requests", "bs4"]
 )
