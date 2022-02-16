@@ -1,4 +1,7 @@
 venv/
 *.mp3
 .idea/
-core/__pycache__/
+src/core/__pycache__/
+data/
+mail_server.py
+main.py

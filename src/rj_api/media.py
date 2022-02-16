@@ -1,14 +1,30 @@
-from bs4 import BeautifulSoup
+from typing import Dict
 
-from core.base_request import RjBaseRequest
+from base_request import RjBaseRequest
 
 
 class MP3(RjBaseRequest):
+    """
+    Class to operate on mp3 files
+    """
 
-    def get_playlist(self):
+    def get_playlist(self) -> Dict:
+        """
+        Get user active play lost
+
+        :return:
+        :rtype: Dict
+        """
+
         return self.get("https://r-j-app-desk.com/api2/playlists_dash", True)
 
     def info(self, mp3_id: int):
+        """
+
+        :param mp3_id:
+        :return:
+        """
+
         return self.get(f"https://r-j-app-desk.com/api2/mp3?id={mp3_id}", True)
 
     def vote(self, mp3_id: int):
